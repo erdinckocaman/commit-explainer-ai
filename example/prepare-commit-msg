@@ -1,0 +1,4 @@
+#!/bin/sh
+
+<path_to_repo>/commit-explainer-ai/commit_explainer.py prepend-task-to-commit-msg --msg-file $1 --commit-source $2 --api-key <openapi-api-key>
+
