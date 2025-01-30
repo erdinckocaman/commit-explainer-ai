@@ -1,7 +1,7 @@
 # Commit Explainer AI
 
 `commit-explainer-ai` is a command-line tool that helps you append AI-generated comments to your commit messages based on the staged changes in your Git repository.
-This tool summarize the changes made in the commit and present it in a human-friendly format.
+This tool summarizes the changes made in the commit and present it in a human-friendly format.
 
 e.g.
 ```
