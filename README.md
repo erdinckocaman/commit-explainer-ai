@@ -21,7 +21,8 @@
 
 ## Usage
 
-To use the `commit_explainer` tool, you need to have a valid API key for the AI service and the necessary configurations. There is an example "prepare-commit-msg" file under the folder "examples"
+To use the `commit_explainer` tool, you need to have a valid API key for an OpenAPI compliant AI service and the necessary configurations. There is an example "prepare-commit-msg" file under the folder "examples".
+You may update that file according to your environment and copy it to under your git hooks folder.
 
 ### Command
 
