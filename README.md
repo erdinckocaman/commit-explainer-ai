@@ -10,7 +10,7 @@ Date:   Thu Jan 30 23:03:35 2025 +0300
 
     [AUTO]
     Add a new line to the end of the file.
-    - Include an additional line in delete.txt.
+    - Include an additional line in sample.txt.
 ```
 
 ## Installation
