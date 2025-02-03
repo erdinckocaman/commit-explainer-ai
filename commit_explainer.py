@@ -3,11 +3,29 @@
 
 import  commit_explainer_util as util
 import click
+import sys
 
 @click.Group
 def cli():
     pass
 
+@cli.command()
+@click.option("--model", required=True, default="deepseek-ai/DeepSeek-V3")
+@click.option("--base-url", required=True, default="https://api.hyperbolic.xyz/v1")
+@click.option("--api-key", required=True)
+def commit_explainer(model, base_url, api_key):
+    input_string = sys.stdin.read().strip()
+    if not input_string:
+        click.echo("No input provided!")
+        return
+
+    click.echo("--> Executing explainer")
+    click.echo(input_string)
+    explanation = util.execute_chat_completion(base_url=base_url, api_key=api_key, model=model,
+                                               diff_content=input_string)
+
+    click.echo("--> Result of commit explanation")
+    click.echo(explanation.strip())
 
 @cli.command()
 @click.option("--msg-file", required=True)
